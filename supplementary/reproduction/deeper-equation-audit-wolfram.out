@@ -1,0 +1,29 @@
+Deeper equation audit Wolfram output
+checks=26
+failures=0
+THF characteristic polynomial: PASS
+Ideal flat-band factorization: PASS
+Flat-band eigenvector has zero shifted eigenvalue: PASS
+Upper-band eigenvector has eigenvalue a k^2+c^2/a: PASS
+Bloch states normalized and orthogonal: PASS
+Interband matrix elements: PASS
+Quantum metric and Berry curvature: PASS
+Ideal geometry trace condition: PASS
+Integrated metric over cutoff disk: PASS
+LL block characteristic equation: PASS
+LLTR block characteristic equation: PASS
+LL branch roots solve LL characteristic: PASS
+LLTR branch roots solve LLTR characteristic: PASS
+Top-gap low-field asymptote: PASS
+Top-gap large-field asymptote numeric spot check: PASS
+LL- inversion derivative: PASS
+LLTR- inversion derivative: PASS
+Local spacing from inverse slope, LL- and LLTR-: PASS
+Effective masses for anomalous branches: PASS
+Missing-B LLTR- mass formula is not generally equivalent: PASS
+Upper-branch spacings reduce to parabolic spacing: PASS
+LK finite-temperature harmonic prefactor: PASS
+Fixed-density Helmholtz derivative cancellation: PASS
+Bstar numeric anchor: PASS
+Parabolic mass numeric anchor: PASS
+Integrated metric numeric anchor: PASS

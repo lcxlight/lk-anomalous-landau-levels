@@ -1,0 +1,528 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{35}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Shoenberg}(1984)}]{shoenberg1984magnetic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Shoenberg}},\ }\href {https://doi.org/10.1017/cbo9780511897870} {\emph
+  {\bibinfo {title} {Magnetic Oscillations in Metals}}}\ (\bibinfo  {publisher}
+  {Cambridge University Press},\ \bibinfo {address} {Cambridge},\ \bibinfo
+  {year} {1984})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Lifshitz}\ and\ \citenamefont
+  {Kosevich}(1956)}]{lifshitz1956theory}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~M.}\ \bibnamefont
+  {Lifshitz}}\ and\ \bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Kosevich}},\ }\bibfield  {title} {\bibinfo {title} {Theory of magnetic
+  susceptibility in metals at low temperatures},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Sov. Phys. JETP}\ }\textbf {\bibinfo {volume}
+  {2}},\ \bibinfo {pages} {636} (\bibinfo {year} {1956})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bistritzer}\ and\ \citenamefont
+  {MacDonald}(2011)}]{bistritzer2011moire}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Bistritzer}}\ and\ \bibinfo {author} {\bibfnamefont {A.~H.}\ \bibnamefont
+  {MacDonald}},\ }\bibfield  {title} {\bibinfo {title} {Moir{\'e} bands in
+  twisted double-layer graphene},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Proceedings of the National Academy of Sciences}\
+  }\textbf {\bibinfo {volume} {108}},\ \bibinfo {pages} {12233} (\bibinfo
+  {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cao}\ \emph {et~al.}(2018)\citenamefont {Cao},
+  \citenamefont {Fatemi}, \citenamefont {Fang}, \citenamefont {Watanabe},
+  \citenamefont {Taniguchi}, \citenamefont {Kaxiras},\ and\ \citenamefont
+  {Jarillo-Herrero}}]{cao2018unconventional}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Cao}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Fatemi}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fang}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Watanabe}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Taniguchi}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Kaxiras}},\ and\ \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {Jarillo-Herrero}},\ }\bibfield  {title}
+  {\bibinfo {title} {Unconventional superconductivity in magic-angle graphene
+  superlattices},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nature}\ }\textbf {\bibinfo {volume} {556}},\ \bibinfo {pages} {43}
+  (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Serlin}\ \emph {et~al.}(2020)\citenamefont {Serlin},
+  \citenamefont {Tschirhart}, \citenamefont {Polshyn}, \citenamefont {Zhang},
+  \citenamefont {Zhu}, \citenamefont {Watanabe}, \citenamefont {Taniguchi},
+  \citenamefont {Balents},\ and\ \citenamefont {Young}}]{serlin2020intrinsic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Serlin}}, \bibinfo {author} {\bibfnamefont {C.~L.}\ \bibnamefont
+  {Tschirhart}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Polshyn}},
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zhang}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Zhu}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Watanabe}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Taniguchi}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Balents}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.~F.}\ \bibnamefont {Young}},\ }\bibfield  {title} {\bibinfo
+  {title} {Intrinsic quantized anomalous hall effect in a moir{\'e}
+  heterostructure},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Science}\ }\textbf {\bibinfo {volume} {367}},\ \bibinfo {pages} {900}
+  (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Song}\ and\ \citenamefont
+  {Bernevig}(2022)}]{song2022magic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.-D.}\ \bibnamefont
+  {Song}}\ and\ \bibinfo {author} {\bibfnamefont {B.~A.}\ \bibnamefont
+  {Bernevig}},\ }\bibfield  {title} {\bibinfo {title} {Magic-angle twisted
+  bilayer graphene as a topological heavy fermion problem},\ }\href
+  {https://doi.org/10.1103/physrevlett.129.047601} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {129}},\
+  \bibinfo {pages} {047601} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ledwith}\ \emph {et~al.}(2020)\citenamefont
+  {Ledwith}, \citenamefont {Tarnopolsky}, \citenamefont {Khalaf},\ and\
+  \citenamefont {Vishwanath}}]{ledwith2020fractional}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~J.}\ \bibnamefont
+  {Ledwith}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Tarnopolsky}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
+  {Khalaf}},\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Vishwanath}},\ }\bibfield  {title} {\bibinfo {title} {Fractional chern
+  insulator states in twisted bilayer graphene: An analytical approach},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  Research}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {023237}
+  (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cai}\ \emph {et~al.}(2023)\citenamefont {Cai},
+  \citenamefont {Anderson}, \citenamefont {Wang}, \citenamefont {Zhang},
+  \citenamefont {Liu}, \citenamefont {Holtzmann}, \citenamefont {Zhang},
+  \citenamefont {Fan}, \citenamefont {Taniguchi}, \citenamefont {Watanabe}
+  \emph {et~al.}}]{cai2023signatures}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Cai}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Anderson}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Wang}}, \bibinfo {author}
+  {\bibfnamefont {X.}~\bibnamefont {Zhang}}, \bibinfo {author} {\bibfnamefont
+  {X.}~\bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Holtzmann}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zhang}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Fan}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Taniguchi}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Watanabe}}, \emph {et~al.},\ }\bibfield
+  {title} {\bibinfo {title} {Signatures of fractional quantum anomalous hall
+  states in twisted mote2},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature}\ }\textbf {\bibinfo {volume} {622}},\ \bibinfo {pages}
+  {63} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Zeng}\ \emph {et~al.}(2023)\citenamefont {Zeng},
+  \citenamefont {Xia}, \citenamefont {Kang}, \citenamefont {Zhu}, \citenamefont
+  {Kn{\"u}ppel}, \citenamefont {Vaswani}, \citenamefont {Watanabe},
+  \citenamefont {Taniguchi}, \citenamefont {Mak},\ and\ \citenamefont
+  {Shan}}]{zeng2023thermodynamic}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Zeng}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Xia}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Kang}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Zhu}}, \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Kn{\"u}ppel}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Vaswani}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Watanabe}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Taniguchi}}, \bibinfo {author} {\bibfnamefont {K.~F.}\
+  \bibnamefont {Mak}},\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Shan}},\ }\bibfield  {title} {\bibinfo {title} {Thermodynamic evidence of
+  fractional chern insulator in moir{\'e} mote2},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {622}},\
+  \bibinfo {pages} {69} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Xu}\ \emph {et~al.}(2023)\citenamefont {Xu},
+  \citenamefont {Sun}, \citenamefont {Jia}, \citenamefont {Liu}, \citenamefont
+  {Xu}, \citenamefont {Li}, \citenamefont {Gu}, \citenamefont {Watanabe},
+  \citenamefont {Taniguchi}, \citenamefont {Tong} \emph
+  {et~al.}}]{xu2023observation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Xu}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Sun}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Jia}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Liu}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Xu}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Gu}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Watanabe}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Taniguchi}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Tong}}, \emph {et~al.},\ }\bibfield
+  {title} {\bibinfo {title} {Observation of integer and fractional quantum
+  anomalous hall effects in twisted bilayer mote2},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Physical Review X}\ }\textbf {\bibinfo
+  {volume} {13}},\ \bibinfo {pages} {031037} (\bibinfo {year}
+  {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Adak}\ \emph {et~al.}(2024)\citenamefont {Adak},
+  \citenamefont {Sinha}, \citenamefont {Agarwal},\ and\ \citenamefont
+  {Deshmukh}}]{adak2024tunable}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~C.}\ \bibnamefont
+  {Adak}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Sinha}},
+  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Agarwal}},\ and\ \bibinfo
+  {author} {\bibfnamefont {M.~M.}\ \bibnamefont {Deshmukh}},\ }\bibfield
+  {title} {\bibinfo {title} {Tunable moir{\'e} materials for probing berry
+  physics and topology},\ }\href {https://doi.org/10.1038/s41578-024-00671-4}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature Reviews Materials}\
+  }\textbf {\bibinfo {volume} {9}},\ \bibinfo {pages} {481} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mak}\ and\ \citenamefont
+  {Shan}(2022)}]{mak2022semiconductor}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~F.}\ \bibnamefont
+  {Mak}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Shan}},\
+  }\bibfield  {title} {\bibinfo {title} {Semiconductor moir{\'e} materials},\
+  }\href {https://doi.org/10.1038/s41565-022-01165-6} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature Nanotechnology}\ }\textbf {\bibinfo {volume}
+  {17}},\ \bibinfo {pages} {686} (\bibinfo {year} {2022})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Balents}\ \emph {et~al.}(2020)\citenamefont
+  {Balents}, \citenamefont {Dean}, \citenamefont {Efetov},\ and\ \citenamefont
+  {Young}}]{balents2020superconductivity}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Balents}}, \bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont {Dean}},
+  \bibinfo {author} {\bibfnamefont {D.~K.}\ \bibnamefont {Efetov}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.~F.}\ \bibnamefont {Young}},\ }\bibfield
+  {title} {\bibinfo {title} {Superconductivity and strong correlations in
+  moir{\'e} flat bands},\ }\href {https://doi.org/10.1038/s41567-020-0906-9}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature Physics}\ }\textbf
+  {\bibinfo {volume} {16}},\ \bibinfo {pages} {725} (\bibinfo {year}
+  {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ and\ \citenamefont
+  {Dai}(2021)}]{liu2021orbital}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Liu}}\ and\ \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Dai}},\
+  }\bibfield  {title} {\bibinfo {title} {Orbital magnetic states in moir{\'e}
+  graphene systems},\ }\href {https://doi.org/10.1038/s42254-021-00297-3}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature Reviews Physics}\ }\textbf
+  {\bibinfo {volume} {3}},\ \bibinfo {pages} {367} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Checkelsky}\ \emph {et~al.}(2024)\citenamefont
+  {Checkelsky}, \citenamefont {Bernevig}, \citenamefont {Coleman},
+  \citenamefont {Si},\ and\ \citenamefont {Paschen}}]{checkelsky2024flat}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~G.}\ \bibnamefont
+  {Checkelsky}}, \bibinfo {author} {\bibfnamefont {B.~A.}\ \bibnamefont
+  {Bernevig}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Coleman}},
+  \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont {Si}},\ and\ \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Paschen}},\ }\bibfield  {title}
+  {\bibinfo {title} {Flat bands, strange metals and the kondo effect},\ }\href
+  {https://doi.org/10.1038/s41578-023-00644-z} {\bibfield  {journal} {\bibinfo
+  {journal} {Nature Reviews Materials}\ }\textbf {\bibinfo {volume} {9}},\
+  \bibinfo {pages} {509} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {T{\"o}rm{\"a}}\ \emph {et~al.}(2022)\citenamefont
+  {T{\"o}rm{\"a}}, \citenamefont {Peotta},\ and\ \citenamefont
+  {Bernevig}}]{torma2022superconductivity}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {T{\"o}rm{\"a}}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Peotta}},\ and\ \bibinfo {author} {\bibfnamefont {B.~A.}\ \bibnamefont
+  {Bernevig}},\ }\bibfield  {title} {\bibinfo {title} {Superconductivity,
+  superfluidity and quantum geometry in twisted multilayer systems},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nature Reviews
+  Physics}\ }\textbf {\bibinfo {volume} {4}},\ \bibinfo {pages} {528} (\bibinfo
+  {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Song}\ \emph {et~al.}(2019)\citenamefont {Song},
+  \citenamefont {Wang}, \citenamefont {Shi}, \citenamefont {Li}, \citenamefont
+  {Fang},\ and\ \citenamefont {Bernevig}}]{song2019all}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Song}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Wang}}, \bibinfo
+  {author} {\bibfnamefont {W.}~\bibnamefont {Shi}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Li}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Fang}},\ and\ \bibinfo {author} {\bibfnamefont {B.~A.}\
+  \bibnamefont {Bernevig}},\ }\bibfield  {title} {\bibinfo {title} {All magic
+  angles in twisted bilayer graphene are topological},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
+  }\textbf {\bibinfo {volume} {123}},\ \bibinfo {pages} {036401} (\bibinfo
+  {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Song}\ \emph {et~al.}(2021)\citenamefont {Song},
+  \citenamefont {Lian}, \citenamefont {Regnault},\ and\ \citenamefont
+  {Bernevig}}]{song2021twisted}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Z.-D.}\ \bibnamefont
+  {Song}}, \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Lian}}, \bibinfo
+  {author} {\bibfnamefont {N.}~\bibnamefont {Regnault}},\ and\ \bibinfo
+  {author} {\bibfnamefont {B.~A.}\ \bibnamefont {Bernevig}},\ }\bibfield
+  {title} {\bibinfo {title} {Twisted bilayer graphene. ii. stable symmetry
+  anomaly},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review B}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo {pages}
+  {205412} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Po}\ \emph {et~al.}(2019)\citenamefont {Po},
+  \citenamefont {Zou}, \citenamefont {Senthil},\ and\ \citenamefont
+  {Vishwanath}}]{po2019faithful}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~C.}\ \bibnamefont
+  {Po}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Zou}}, \bibinfo
+  {author} {\bibfnamefont {T.}~\bibnamefont {Senthil}},\ and\ \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Vishwanath}},\ }\bibfield  {title}
+  {\bibinfo {title} {Faithful tight-binding models and fragile topology of
+  magic-angle bilayer graphene},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {99}},\
+  \bibinfo {pages} {195455} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ahn}\ \emph {et~al.}(2019)\citenamefont {Ahn},
+  \citenamefont {Park},\ and\ \citenamefont {Yang}}]{ahn2019failure}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Ahn}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Park}},\ and\
+  \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont {Yang}},\ }\bibfield
+  {title} {\bibinfo {title} {Failure of nielsen-ninomiya theorem and fragile
+  topology in two-dimensional systems with space-time inversion symmetry:
+  application to twisted bilayer graphene at magic angle},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review X}\ }\textbf
+  {\bibinfo {volume} {9}},\ \bibinfo {pages} {021013} (\bibinfo {year}
+  {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kang}\ \emph {et~al.}(2025)\citenamefont {Kang},
+  \citenamefont {Kim}, \citenamefont {Qian}, \citenamefont {Neves},
+  \citenamefont {Ye}, \citenamefont {Jung}, \citenamefont {Puntel},
+  \citenamefont {Mazzola}, \citenamefont {Fang}, \citenamefont {Jozwiak},
+  \citenamefont {Bostwick}, \citenamefont {Rotenberg}, \citenamefont {Fuji},
+  \citenamefont {Vobornik}, \citenamefont {Park}, \citenamefont {Checkelsky},
+  \citenamefont {Yang},\ and\ \citenamefont {Comin}}]{kang2025measurements}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Kang}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Kim}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Qian}}, \bibinfo {author}
+  {\bibfnamefont {P.~M.}\ \bibnamefont {Neves}}, \bibinfo {author}
+  {\bibfnamefont {L.}~\bibnamefont {Ye}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Jung}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Puntel}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Mazzola}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Fang}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Jozwiak}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Bostwick}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Rotenberg}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Fuji}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Vobornik}}, \bibinfo {author} {\bibfnamefont {J.-H.}\ \bibnamefont {Park}},
+  \bibinfo {author} {\bibfnamefont {J.~G.}\ \bibnamefont {Checkelsky}},
+  \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont {Yang}},\ and\
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Comin}},\ }\bibfield
+  {title} {\bibinfo {title} {Measurements of the quantum geometric tensor in
+  solids},\ }\href {https://doi.org/10.1038/s41567-024-02678-8} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature Physics}\ }\textbf {\bibinfo {volume}
+  {21}},\ \bibinfo {pages} {110} (\bibinfo {year} {2025})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(2025)\citenamefont {Kim},
+  \citenamefont {Chung}, \citenamefont {Qian}, \citenamefont {Park},
+  \citenamefont {Jozwiak} \emph {et~al.}}]{kim2025direct}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Kim}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Chung}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Qian}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Park}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Jozwiak}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo
+  {title} {Direct measurement of the quantum metric tensor in solids},\
+  }\bibfield  {journal} {\bibinfo  {journal} {Science}\ }\href
+  {https://doi.org/10.1126/science.ado6049} {10.1126/science.ado6049} (\bibinfo
+  {year} {2025})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yu}\ \emph {et~al.}(2025)\citenamefont {Yu},
+  \citenamefont {Bernevig}, \citenamefont {Queiroz}, \citenamefont {Rossi},
+  \citenamefont {T{\"o}rm{\"a}}, \citenamefont {Yang} \emph
+  {et~al.}}]{yu2025quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Yu}}, \bibinfo {author} {\bibfnamefont {B.~A.}\ \bibnamefont {Bernevig}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Queiroz}}, \bibinfo
+  {author} {\bibfnamefont {E.}~\bibnamefont {Rossi}}, \bibinfo {author}
+  {\bibfnamefont {P.}~\bibnamefont {T{\"o}rm{\"a}}}, \bibinfo {author}
+  {\bibfnamefont {B.-J.}\ \bibnamefont {Yang}}, \emph {et~al.},\ }\bibfield
+  {title} {\bibinfo {title} {Quantum geometry in quantum materials},\ }\href
+  {https://doi.org/10.1038/s41535-025-00801-3} {\bibfield  {journal} {\bibinfo
+  {journal} {npj Quantum Materials}\ }\textbf {\bibinfo {volume} {10}},\
+  \bibinfo {pages} {101} (\bibinfo {year} {2025})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {T{\"o}rm{\"a}}(2023)}]{torma2023essay}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {T{\"o}rm{\"a}}},\ }\bibfield  {title} {\bibinfo {title} {Essay: Where can
+  quantum geometry lead us?},\ }\href@noop {} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume} {131}},\
+  \bibinfo {pages} {240001} (\bibinfo {year} {2023})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ \emph {et~al.}(2025{\natexlab{a}})\citenamefont
+  {Liu}, \citenamefont {Qiang}, \citenamefont {Lu},\ and\ \citenamefont
+  {Xie}}]{liu2025quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {X.-B.}\ \bibnamefont {Qiang}},
+  \bibinfo {author} {\bibfnamefont {H.-Z.}\ \bibnamefont {Lu}},\ and\ \bibinfo
+  {author} {\bibfnamefont {X.~C.}\ \bibnamefont {Xie}},\ }\bibfield  {title}
+  {\bibinfo {title} {Quantum geometry in condensed matter},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {National Science Review}\
+  }\textbf {\bibinfo {volume} {12}},\ \bibinfo {pages} {nwae334} (\bibinfo
+  {year} {2025}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rhim}\ \emph {et~al.}(2020)\citenamefont {Rhim},
+  \citenamefont {Kim},\ and\ \citenamefont {Yang}}]{rhim2020quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-W.}\ \bibnamefont
+  {Rhim}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Kim}},\ and\
+  \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont {Yang}},\ }\bibfield
+  {title} {\bibinfo {title} {Quantum distance and anomalous landau levels of
+  flat bands},\ }\href {https://doi.org/10.1038/s41586-020-2540-1} {\bibfield
+  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {584}},\
+  \bibinfo {pages} {59} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hwang}\ \emph {et~al.}(2021)\citenamefont {Hwang},
+  \citenamefont {Rhim},\ and\ \citenamefont {Yang}}]{hwang2021geometric}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Hwang}}, \bibinfo {author} {\bibfnamefont {J.-W.}\ \bibnamefont {Rhim}},\
+  and\ \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont {Yang}},\
+  }\bibfield  {title} {\bibinfo {title} {Geometric characterization of
+  anomalous landau levels of isolated flat bands},\ }\href
+  {https://doi.org/10.1038/s41467-021-26765-z} {\bibfield  {journal} {\bibinfo
+  {journal} {Nat. Commun.}\ }\textbf {\bibinfo {volume} {12}},\ \bibinfo
+  {pages} {6433} (\bibinfo {year} {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rhim}\ and\ \citenamefont
+  {Yang}(2020)}]{rhim2020singular}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-W.}\ \bibnamefont
+  {Rhim}}\ and\ \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont
+  {Yang}},\ }\bibfield  {title} {\bibinfo {title} {Singular flat bands},\
+  }\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint}\ }\href
+  {https://doi.org/10.48550/arXiv.2012.04279} {10.48550/arXiv.2012.04279}
+  (\bibinfo {year} {2020}),\ \Eprint {https://arxiv.org/abs/2012.04279}
+  {arXiv:2012.04279 [physics.optics]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Long}\ and\ \citenamefont
+  {Liu}(2026)}]{long2026interplay}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Long}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Liu}},\
+  }\bibfield  {title} {\bibinfo {title} {Interplay of quantum and real-space
+  geometry in the anomalous landau levels of singular flat bands},\ }\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\href
+  {https://doi.org/10.1103/j9dw-vgb4} {10.1103/j9dw-vgb4} (\bibinfo {year}
+  {2026}),\ \Eprint {https://arxiv.org/abs/2505.03024} {arXiv:2505.03024
+  [cond-mat.mes-hall]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Jung}\ \emph {et~al.}(2024)\citenamefont {Jung},
+  \citenamefont {Lim},\ and\ \citenamefont {Yang}}]{jung2024quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Jung}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Lim}},\ and\
+  \bibinfo {author} {\bibfnamefont {B.-J.}\ \bibnamefont {Yang}},\ }\bibfield
+  {title} {\bibinfo {title} {Quantum geometry and landau levels of quadratic
+  band crossings},\ }\href {https://doi.org/10.1103/PhysRevB.109.035134}
+  {\bibfield  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo
+  {volume} {109}},\ \bibinfo {pages} {035134} (\bibinfo {year}
+  {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kawakami}\ \emph {et~al.}(2025)\citenamefont
+  {Kawakami}, \citenamefont {Igarashi},\ and\ \citenamefont
+  {Koshino}}]{kawakami2025singular}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Kawakami}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Igarashi}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Koshino}},\
+  }\bibfield  {title} {\bibinfo {title} {Singular flat bands in three
+  dimensions: Landau level spreading, quantum geometry, and weyl
+  reconstruction},\ }\href {https://doi.org/10.1103/rv4l-hxf8} {\bibfield
+  {journal} {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume}
+  {112}},\ \bibinfo {pages} {125202} (\bibinfo {year} {2025})},\ \Eprint
+  {https://arxiv.org/abs/2506.14154} {arXiv:2506.14154 [cond-mat.mes-hall]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Datta}\ and\ \citenamefont
+  {Roychowdhury}(2025)}]{datta2025anomalous}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Datta}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Roychowdhury}},\ }\bibfield  {title} {\bibinfo {title} {Anomalous landau
+  levels in inhomogeneous fluxes and emergent supersymmetry},\ }\bibfield
+  {journal} {\bibinfo  {journal} {arXiv preprint}\ }\href
+  {https://doi.org/10.48550/arXiv.2509.20462} {10.48550/arXiv.2509.20462}
+  (\bibinfo {year} {2025}),\ \Eprint {https://arxiv.org/abs/2509.20462}
+  {arXiv:2509.20462 [cond-mat.mes-hall]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fu}\ \emph {et~al.}(2026)\citenamefont {Fu},
+  \citenamefont {Weng},\ and\ \citenamefont {Po}}]{fu2026anomalous}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Fu}}, \bibinfo {author} {\bibfnamefont {C.~Y.}\ \bibnamefont {Weng}},\ and\
+  \bibinfo {author} {\bibfnamefont {H.~C.}\ \bibnamefont {Po}},\ }\bibfield
+  {title} {\bibinfo {title} {Anomalous landau levels and quantum oscillation in
+  rotation-invariant insulators},\ }\href
+  {https://doi.org/10.1038/s41535-026-00867-7} {\bibfield  {journal} {\bibinfo
+  {journal} {npj Quantum Materials}\ }\textbf {\bibinfo {volume} {11}},\
+  \bibinfo {pages} {36} (\bibinfo {year} {2026})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ \emph {et~al.}(2025{\natexlab{b}})\citenamefont
+  {Liu}, \citenamefont {Aryal}, \citenamefont {Yang}, \citenamefont {Calugaru},
+  \citenamefont {Fang}, \citenamefont {Hu}, \citenamefont {Yan}, \citenamefont
+  {Bernevig},\ and\ \citenamefont {Liu}}]{liu2025ideal}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Aryal}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Yang}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Calugaru}}, \bibinfo {author}
+  {\bibfnamefont {Z.}~\bibnamefont {Fang}}, \bibinfo {author} {\bibfnamefont
+  {H.}~\bibnamefont {Hu}}, \bibinfo {author} {\bibfnamefont {Q.}~\bibnamefont
+  {Yan}}, \bibinfo {author} {\bibfnamefont {B.~A.}\ \bibnamefont {Bernevig}},\
+  and\ \bibinfo {author} {\bibfnamefont {C.-X.}\ \bibnamefont {Liu}},\
+  }\bibfield  {title} {\bibinfo {title} {Ideal topological flat bands in
+  two-dimensional moir{\'e} heterostructures with type-ii band alignment},\
+  }\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint}\ }\href
+  {https://doi.org/10.48550/arXiv.2507.06168} {10.48550/arXiv.2507.06168}
+  (\bibinfo {year} {2025}{\natexlab{b}}),\ \Eprint
+  {https://arxiv.org/abs/2507.06168} {arXiv:2507.06168 [cond-mat.mes-hall]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Liu}\ \emph {et~al.}(2023)\citenamefont {Liu},
+  \citenamefont {Chu}, \citenamefont {Yang}, \citenamefont {Yuan},
+  \citenamefont {Wu}, \citenamefont {Ji}, \citenamefont {Tian}, \citenamefont
+  {Yang}, \citenamefont {Watanabe}, \citenamefont {Taniguchi}, \citenamefont
+  {Long}, \citenamefont {Shi}, \citenamefont {Liu}, \citenamefont {Shen},
+  \citenamefont {Lu}, \citenamefont {Yang},\ and\ \citenamefont
+  {Zhang}}]{liu2022quantum}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Chu}}, \bibinfo
+  {author} {\bibfnamefont {G.}~\bibnamefont {Yang}}, \bibinfo {author}
+  {\bibfnamefont {Y.}~\bibnamefont {Yuan}}, \bibinfo {author} {\bibfnamefont
+  {F.}~\bibnamefont {Wu}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Ji}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Tian}}, \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Yang}}, \bibinfo {author}
+  {\bibfnamefont {K.}~\bibnamefont {Watanabe}}, \bibinfo {author}
+  {\bibfnamefont {T.}~\bibnamefont {Taniguchi}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Long}}, \bibinfo {author} {\bibfnamefont
+  {D.}~\bibnamefont {Shi}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Liu}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Shen}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Lu}}, \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {Yang}},\ and\ \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Zhang}},\ }\bibfield  {title} {\bibinfo
+  {title} {Quantum oscillations in field-induced correlated insulators of a
+  moir{\'e} superlattice},\ }\href {https://doi.org/10.1016/j.scib.2023.05.006}
+  {\bibfield  {journal} {\bibinfo  {journal} {Science Bulletin}\ }\textbf
+  {\bibinfo {volume} {68}},\ \bibinfo {pages} {1127} (\bibinfo {year}
+  {2023})}\BibitemShut {NoStop}%
+\end{thebibliography}%
