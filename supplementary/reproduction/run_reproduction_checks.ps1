@@ -38,6 +38,8 @@ try {
     if (Get-Command wolframscript -ErrorAction SilentlyContinue) {
         wolframscript -file "supplementary/reproduction/check_deeper_equation_audit.wls"
         if ($LASTEXITCODE -ne 0) { throw "Wolfram equation audit failed" }
+        wolframscript -file "supplementary/reproduction/check_appendix_C3_effective_mass.wls"
+        if ($LASTEXITCODE -ne 0) { throw "Wolfram Appendix C.3 effective-mass audit failed" }
     }
     else {
         Write-Warning "wolframscript not found; symbolic audit was not rerun"

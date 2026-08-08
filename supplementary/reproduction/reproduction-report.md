@@ -1,7 +1,7 @@
 # Staged Reproduction Report
 
 Initial reproduction: 2026-07-03 to 2026-07-17  
-Staging-path refresh: 2026-07-18  
+Staging-path refresh: 2026-08-05  
 Effective repository root: the publication-staging tree
 
 This report records the reproduction evidence retained in the public APP
@@ -28,6 +28,7 @@ report is secondary validation context.
 | Appendix local-window and fitted-mass tables | `manual-only` | Rows are manually typeset in `paper/appendix.tex` and were cross-checked against the staged D.3 and D.5 CSVs. |
 | Main and appendix LaTeX builds | `reproduced` | Both staged PDFs built without undefined references, undefined citations, missing figures, or fatal errors. |
 | Deeper symbolic equation audit | `reproduced` | `supplementary/reproduction/deeper-equation-audit-wolfram.out` reports 26/26 checks passed. |
+| Appendix C.3 effective-mass audit | `reproduced` | `supplementary/reproduction/check_appendix_C3_effective_mass.out` reports 17/17 checks passed. |
 
 ## Primary numerical evidence
 
@@ -60,15 +61,14 @@ WolframScript 1.13.0. Exact setup and runner commands are in
   end-to-end rerun.
 - Chat/session history, exploratory sweeps, backups, abandoned drafts, caches,
   and parent working-repository history are excluded by author request.
-- The manuscript contains no APP repository URL; the canonical release URL is
-  therefore carried by the repository metadata and citation rather than by a
-  late manuscript edit.
+- The manuscript now contains the stable APP repository URL in its data and
+  code availability note. Version-specific release URLs are carried by the
+  repository metadata and citation.
 
 ## Release metadata status
 
 The intended target is
-`https://github.com/lcxlight/lk-anomalous-landau-levels` at tag `v1.0.0`.
+`https://github.com/lcxlight/lk-anomalous-landau-levels` at tag `v1.1.0`.
 The author approved MIT for code and CC BY 4.0 for all non-code publication
-content on 2026-07-18. The empty public repository and release-workflow access
-were confirmed on 2026-07-18. Final full validation, author freeze approval,
-and the verified release manifest remain required before publication.
+content on 2026-07-18. Final full validation, author freeze approval, and the
+verified release manifest remain required before publication.

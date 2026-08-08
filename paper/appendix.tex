@@ -596,8 +596,53 @@ Using $\meff = B/v_{\mu}$ and the above expressions for $v_{\mu}$ gives:
     m^{*}_{\mathrm{eff},\uparrow-}   & = \frac{c^{2}B - (\mu-E_0)^{2}}{2a(\mu-E_0)^{2}}, \label{eq:meff-LLminus-app}  \\
     m^{*}_{\mathrm{eff},\downarrow-} & = \frac{1}{2a} + \frac{c^{2}B}{2a(\mu-E_0)^{2}}. \label{eq:meff-LLTRminus-app}
 \end{align}
-Note that $m^*_{\mathrm{eff},\uparrow-} \propto B$ in the bulk regime ($\dmu^2\ll c^2B$), while $m^*_{\mathrm{eff},\downarrow-}\approx c^2B/[2a(\mu-E_0)^2] \propto B/(\mu-E_0)^2$, both strongly field-dependent in contrast to the constant mass $m^*_{\mathrm{eff},\alpha +}=1/(2a)$ of the dispersive upper branches.
-At fixed carrier density $\rho$, the chemical potential $\mu_{\rho}(B)$ is determined self-consistently; plugging this trajectory into the above formulas yields the dashed theory curves in Fig.~\ref{fig:main4} of the main text.
+In the anomalous bulk regime, $\dmu^2\ll c^2B$, the two lower-branch masses have the same leading behavior,
+\begin{equation}
+    m^*_{\mathrm{eff},\uparrow-}
+    \simeq
+    m^*_{\mathrm{eff},\downarrow-}
+    \simeq
+    \frac{c^2B}{2a(\mu-E_0)^2},
+    \label{eq:meff-anomalous-bulk-app}
+\end{equation}
+up to the subleading additive constants $\mp 1/(2a)$.
+This strong field dependence at fixed $\mu$ contrasts with the constant parabolic value $m^*_{\mathrm{eff},\alpha +}=1/(2a)$ of the dispersive upper branches.
+At fixed carrier density, however, the field dependence must be evaluated along the self-consistent trajectory $\mu_\rho(B)$.
+For a single active lower-branch sequence, the LL degeneracy is $D=B/(2\pi)$, so fixed active density $\rho_{\mathcal S}$ (defined in Sec.~D as the density counted by the active sector) selects
+\begin{equation}
+    n^*(B)\simeq \frac{|\rho_{\mathcal S}|}{D}
+    =
+    \frac{2\pi|\rho_{\mathcal S}|}{B}.
+    \label{eq:nstar-fixed-density-app}
+\end{equation}
+The semiclassical momentum tied to this crossing is therefore
+\begin{equation}
+    k_{n^*}^2\simeq 2n^*B\simeq 4\pi|\rho_{\mathcal S}|,
+    \label{eq:kn-fixed-density-app}
+\end{equation}
+which is approximately independent of $B$ at fixed density.
+Using the weak-field anomalous-branch dispersion,
+\begin{equation}
+    \mu_\rho(B)-E_0
+    \simeq
+    s_\alpha\frac{c^2B}{c^2/a+a k_{n^*}^2}
+    \simeq
+    s_\alpha\frac{c^2}{c^2/a+4\pi a|\rho_{\mathcal S}|}\,B,
+    \qquad
+    s_\uparrow=+1,\quad s_\downarrow=-1,
+    \label{eq:mu-fixed-density-linear-app}
+\end{equation}
+so the chemical-potential offset from the flat-band energy is linear in $B$ along the fixed-density trajectory.
+Substituting Eq.~\eqref{eq:mu-fixed-density-linear-app} into Eq.~\eqref{eq:meff-anomalous-bulk-app} gives
+\begin{equation}
+    m^*_{\mathrm{eff},\alpha-}\bigl(B,\mu_\rho(B)\bigr)
+    \simeq
+    \frac{\left(c^2/a+4\pi a|\rho_{\mathcal S}|\right)^2}{2ac^2}\,\frac{1}{B}
+    =
+    \frac{1}{aB\,\tr\metric_\alpha(k_{n^*})},
+    \label{eq:meff-fixed-density-inverseB-app}
+\end{equation}
+which is the roughly $1/B$ trend shown by the dashed theory curves in Fig.~\ref{fig:main4} of the main text.
 
 % ================================================================
 \section{Numerical Results for Fixed-Density Thermodynamics}

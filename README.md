@@ -5,18 +5,18 @@ Department of Physics and Center for Theory of Emergent Quantum Matter, The Penn
 
 This paper develops a Lifshitz--Kosevich theory for anomalous Landau levels in topological flat bands and shows how their thermal damping can probe quantum geometry.
 
-Status: real-publication release candidate; repository access confirmed, final validation and freeze pending  
+Status: real-publication next-version release candidate; final validation and freeze pending  
 Staging created: 2026-07-03  
 Chat history: excluded by author request  
 Public repository URL: https://github.com/lcxlight/lk-anomalous-landau-levels  
-Release tag: v1.0.0  
+Release tag: v1.1.0  
 License: MIT for code; CC BY 4.0 for all non-code publication content
 
 ## Talk to this paper
 
-This staging tree is the real-publication candidate for the Agentic Publication Protocol. Open this folder in an AI coding agent that reads `AGENTS.md` to ask questions about the paper, inspect equations, check staged data, or reproduce figures.
+This staging tree is the real-publication next-version candidate for the Agentic Publication Protocol. Open this folder in an AI coding agent that reads `AGENTS.md` to ask questions about the paper, inspect equations, check staged data, or reproduce figures.
 
-The package is not public yet. It becomes a verified APP publication only after the author approves the final validation, the `v1.0.0` tag and GitHub Release are published, and the release manifest is verified.
+This `v1.1.0` candidate incorporates the current manuscript and appendix sources, including the APP repository availability note and the fixed-density effective-mass clarification in Appendix C.3. It becomes a verified APP publication only after the author approves the final validation, the `v1.1.0` tag and GitHub Release are published, and the release manifest is verified.
 
 ## Paper
 
@@ -51,8 +51,8 @@ The current full local APP validation report is recorded in `supplementary/valid
   title = {Lifshitz--Kosevich Theory of Anomalous Landau Levels in Topological Flat Bands},
   author = {Liu, Chao-Xing},
   year = {2026},
-  url = {https://github.com/lcxlight/lk-anomalous-landau-levels/releases/tag/v1.0.0},
-  note = {APP publication, version 1.0.0}
+  url = {https://github.com/lcxlight/lk-anomalous-landau-levels/releases/tag/v1.1.0},
+  note = {APP publication, version 1.1.0}
 }
 ```
 
@@ -62,5 +62,5 @@ See `LICENSE` for the approved component-specific terms: MIT for code and CC BY 
 
 ## Required Before Public Release
 
-- Complete the final full APP validation and author freeze approval.
+- Complete the final full APP validation and author freeze approval for `v1.1.0`.
 - Publish and verify the immutable tag, GitHub Release, and `APP_PUBLICATION.json` asset.

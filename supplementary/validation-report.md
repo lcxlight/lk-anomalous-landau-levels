@@ -1,91 +1,75 @@
-# APP Final Frozen-Tree Validation Report
+# APP v1.1.0 Candidate Validation Report
 
-Date: 2026-07-18  
-Stage: `full`, final pre-release validation  
+Date: 2026-08-05  
+Stage: `next-version-candidate`, local validation  
 Effective repository root: the publication-staging tree  
 Result: **passed**
 
-## Passed checks
+## Passed Checks
 
-- Required APP root files and the canonical `paper/`, `code/`, `data/`,
-  `environment/`, `figures/`, and `supplementary/` content are present.
-- `AGENTS.md`, README, metadata, citation, repository URL, `v1.0.0` tag, and
-  version `1.0.0` agree. The empty public repository and connector write access
-  were independently confirmed.
-- The main manuscript source and bibliography are byte-identical to the author
-  sources. The appendix differs only by the six documented staging-local figure
-  redirects to canonical public artifact paths.
-- Both LaTeX documents rebuilt from an isolated temporary copy with exit code
-  zero and no undefined references, undefined citations, missing figures, or
-  fatal errors.
-- The figure/table map covers main Figs. 1--4, Appendix Figs. B.1 and D.1--D.5,
-  the electron LL diagnostic, and both appendix tables. It uses 11
-  `reproduced` and two `manual-only` final statuses with explicit scripts,
-  inputs, outputs, and limitations.
-- The grouped main-figure wrapper regenerated all eight expected PDF/PNG
-  outputs in an isolated temporary tree. The electron diagnostic regenerated
-  its PDF and PNG from the staged dense CSV.
-- The primary D.5 quick check directly reported normal masses `0.625895`,
-  `0.787679`, `0.957589`, anomalous masses `5.917824`, `6.733070`, `10.967707`,
-  and paired ratios `9.454975`, `8.547993`, `11.453466`.
-- All 18 Python files passed AST parsing; the PowerShell reproduction wrapper
-  parsed without errors. The tested Python versions match the pinned
-  environment specification.
-- The Wolfram symbolic audit was rerun and passed 26/26 checks. Its retained
-  `.out` evidence is explicitly included despite the general build-output
-  ignore rule.
-- All documented staging paths resolve. The Git-ignore-respecting publication
-  set contains 74 readable files; undocumented legacy/generated output trees
-  and broken OneDrive placeholders are excluded.
-- Full release-file privacy screening found no credentials, tokens, email
-  addresses, private/internal URLs, private IP addresses, or absolute user
-  directory paths.
-- The approved root license clearly applies MIT to software/scripts and CC BY
-  4.0 to all non-code publication content.
-- A fresh independent staging-root reader-agent session passed identity,
-  scientific-summary, primary-number, reproduction-command, limitation,
-  release-metadata, and privacy checks. Its record is
-  `supplementary/paper-agent-test.md`.
+- The current author manuscript sources were synchronized into `paper/`:
+  `manuscript.tex`, `appendix.tex`, `refs.bib`, and current `.bbl` files.
+- The appendix was kept APP-local by redirecting the six staged appendix
+  figure paths to `figures/appendix_numerics_fresh/`.
+- README, `PUBLICATION_METADATA.md`, `AGENTS.md`, and citation examples now
+  agree on the stable repository
+  `https://github.com/lcxlight/lk-anomalous-landau-levels` and release tag
+  `v1.1.0`; `AGENTS.md` records APP package version `1.1.0`.
+- The staged main manuscript rebuilt with `pdflatex` twice, with no undefined
+  citations, undefined references, missing figures, or fatal errors.
+- The staged appendix rebuilt with `pdflatex` twice, with no undefined
+  citations, undefined references, missing figures, or fatal errors.
+- The quick APP reproduction wrapper
+  `supplementary/reproduction/run_reproduction_checks.ps1` passed.
+- Python dependency import check passed.
+- The grouped main-figure wrapper regenerated the main figure PDFs/PNGs under
+  `figures/manuscript figures/`.
+- The retained deeper Wolfram symbolic audit reran and passed 26/26 checks.
+- The new Appendix C.3 effective-mass Wolfram audit reran and passed 17/17
+  checks, including the \(|\rho_{\mathcal S}|\) fixed-density convention.
+- The D.5 quick check again found three plotted \(\rho=-0.15\) anomalous
+  effective-mass rows:
+  `5.9178239719`, `6.7330704219`, and `10.9677073794`.
 
-## Corrections made during final validation
+## v1.1.0 Scientific/Text Updates
 
-- Corrected the D.5 quick-check field from the nonexistent `window_label` to
-  `window` and made the command calculate the three advertised ratios.
-- Replaced an unavailable OneDrive placeholder input with the readable,
-  hash-matched staged file
-  `figures/spin_counting_diagnostics/electron_LL_near_fermi_summary_dense_public.csv`
-  and updated its reader/script pointers.
-- Updated stale repository-creation language after confirming the public empty
-  repository and connector access.
-- Excluded undocumented legacy default-output trees and explicitly unignored
-  `supplementary/reproduction/deeper-equation-audit-wolfram.out`.
+- Main text now includes the stable APP repository URL in a data and code
+  availability note.
+- Appendix C.3 now makes the fixed-density ensemble point explicit: at fixed
+  \(\mu\), the anomalous bulk mass scales as \(B\), while along the
+  fixed-density trajectory \(\mu_\rho(B)-E_0\propto B\), giving
+  \(m^*_{\mathrm{eff}}\propto 1/B\).
+- Appendix C.3 now writes the active-density counting formulas with
+  \(|\rho_{\mathcal S}|\), making the positivity convention explicit before
+  the detailed sector definition in Appendix D.
 
-## Issues needing changes
+## Issues Needing Changes
 
 Errors: none.  
-Warnings: none.
+Warnings: none blocking. The LaTeX logs retain ordinary overfull/underfull box
+messages and the existing REVTeX float-placement warning, but no unresolved
+references/citations or fatal errors.
 
-## Manual verification and scope notes
+## Scope Notes
 
-- The materially heavier full Appendix D chain was not rerun during this final
-  pass. Its prior successful reproduction, canonical CSVs/figures, and retained
-  evidence were rechecked; the lightweight main wrapper and direct numerical
-  audits were rerun.
-- `APP_PUBLICATION.json` is correctly absent during staging. It can be created
-  only after the public commit and tree hashes exist.
+- This was a local next-version validation, not a remote publication action.
+- The heavy full Appendix D numerical regeneration was not rerun; retained
+  staged D.4/D.5 CSV evidence and the quick wrapper checks were reused.
+- `APP_PUBLICATION.json` remains absent during staging. It should be created
+  only after a public commit/tag/release exists.
 
-## Public-release gate
+## Public-Release Gate
 
-No APP compliance blocker remains in the staged content. Before any remote
-publication action, the author must approve this frozen state and release
-notes. The release workflow must then publish and verify the commit, immutable
-`v1.0.0` tag, GitHub Release, and `APP_PUBLICATION.json` asset.
+Before remote publication, the author should approve this `v1.1.0` staged
+state and release notes. The release workflow must then publish and verify the
+commit, immutable `v1.1.0` tag, GitHub Release, and `APP_PUBLICATION.json`
+asset.
 
-## Canonical artifact fingerprints (SHA-256)
+## Canonical Artifact Fingerprints (SHA-256)
 
-- `paper/manuscript.tex`: `56BB7B2C843A9BD3C8898C2D9B8CB34916740AFF3202951616263705CC472FA1`
-- `paper/manuscript.pdf`: `44808E96117EF3BAF3037AEE36AC09CB37424E4561A8C5E1F3C3D79AC63A7232`
-- `paper/appendix.tex`: `92E47FEC1A1EE578EC05B2AB05C978A710FA53AD044186307471F8EA4F562704`
-- `paper/appendix.pdf`: `8ED4E2EB922912681893EDAAB65FF584E827D53BC477A221E9F1334B4C8DD38C`
+- `paper/manuscript.tex`: `FDC4A73C365671C40A3F145598D44EF4AF70539A5ED800AA28D5A8BF14F1D01B`
+- `paper/manuscript.pdf`: `6CD96A97A93D52BB033E4ACC2CAAACA46B92CBE47D4E441D54DE885E3E53C975`
+- `paper/appendix.tex`: `1B839B8022234F261AD1974FD11845E47AB26028722A0E728690B517BE1506A5`
+- `paper/appendix.pdf`: `5D5ED4E04AC0E5F3C4A64442B9762D391784EA6677C24D599A5EC0845BB774AF`
 - `paper/refs.bib`: `FA9B14497D764D0762416B3FB574A022C2D50BEA730A74C899BD4EBF3D404FCE`
 - D.5 CSV: `9378362E9651F712B3583EA953469F1F643F0E6304470BC74706E671773B3AA3`

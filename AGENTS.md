@@ -7,7 +7,7 @@ authors:
     affiliation: "Department of Physics, The Pennsylvania State University; Center for Theory of Emergent Quantum Matter, The Pennsylvania State University"
 arxiv_id: ""
 paper_format: "latex"
-version: "1.0.0"
+version: "1.1.0"
 domain: "condensed-matter physics"
 tags: ["topological flat bands", "Landau levels", "quantum oscillations", "Lifshitz-Kosevich theory", "quantum geometry", "moire materials"]
 recommended_external_skills: []
@@ -32,7 +32,7 @@ Using a minimal exactly flat topological-band model, the paper compares fixed-de
 2. Fixed-density magnetization oscillations persist for anomalous flat-band LLs, even though the parent band is flat.
 3. Windowed thermal-damping fits give anomalous effective masses around `(5.92, 6.73, 11.0) eV^-1 nm^-2` for the representative `rho=-0.15 nm^-2` case, much larger than the normal-regime masses around `(0.626, 0.788, 0.958) eV^-1 nm^-2`.
 4. In the semiclassical weak-field limit, the anomalous spacing satisfies `v_mu ~ a B^2 tr g`, so the effective mass scales as `m_eff ~ 1/(B tr g)`.
-5. The staged reproduction and Wolfram audits report successful checks of the main figures, Appendix D numerical chain, LK thermal prefactor, local-spacing formulas, and deeper symbolic derivations.
+5. The staged reproduction and Wolfram audits report successful checks of the main figures, Appendix D numerical chain, LK thermal prefactor, local-spacing formulas, Appendix C.3 effective-mass formulas, and deeper symbolic derivations.
 
 ## Where to Look
 
@@ -59,7 +59,7 @@ Using a minimal exactly flat topological-band model, the paper compares fixed-de
 - Label evidence levels when useful: paper claim, staged cached artifact, locally reproduced, newly checked, inferred, or blocked.
 - Warn before heavy reruns, dependency installation, WolframScript checks, or commands that overwrite generated outputs.
 - Do not use similarly named files from any parent working repository as publication sources; the canonical publication files are the staged files listed above under `paper/`.
-- This is the `v1.0.0` real-release candidate for `https://github.com/lcxlight/lk-anomalous-landau-levels`. Do not describe it as released until the public tag, GitHub Release, and verified manifest exist.
+- This is the `v1.1.0` real-release candidate for `https://github.com/lcxlight/lk-anomalous-landau-levels`. Do not describe it as released until the public tag, GitHub Release, and verified manifest exist.
 
 ## Citation
 
@@ -68,7 +68,7 @@ Using a minimal exactly flat topological-band model, the paper compares fixed-de
   title = {Lifshitz--Kosevich Theory of Anomalous Landau Levels in Topological Flat Bands},
   author = {Liu, Chao-Xing},
   year = {2026},
-  url = {https://github.com/lcxlight/lk-anomalous-landau-levels/releases/tag/v1.0.0},
-  note = {APP publication, version 1.0.0}
+  url = {https://github.com/lcxlight/lk-anomalous-landau-levels/releases/tag/v1.1.0},
+  note = {APP publication, version 1.1.0}
 }
 ```

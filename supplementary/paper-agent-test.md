@@ -1,19 +1,18 @@
-# Paper-Agent Final Frozen-Tree Smoke Test
+# Paper-Agent v1.1.0 Candidate Smoke Test
 
-Date: 2026-07-18  
-Mode: real-publication candidate, final pre-freeze reader test  
-Method: fresh independent read-only agent session with the publication-staging
-tree as its effective repository root; parent-working-tree files were excluded
+Date: 2026-08-05  
+Mode: real-publication next-version candidate, local reader test  
+Method: local read/check session with the publication-staging tree as the
+effective repository root; parent-working-tree files are not publication
+sources
 
 ## Result
 
-Passed after two release-record corrections identified by the fresh session:
-the prior validation/smoke reports were stale, and the global `*.out` ignore
-rule would have omitted the retained Wolfram audit output. The reports were
-refreshed and the audit output was explicitly unignored. No scientific source,
-numerical result, or figure artifact changed after the reader test.
+Passed local smoke validation for the `v1.1.0` candidate. The previous
+independent `v1.0.0` frozen-tree reader test is superseded for this staging
+tree by the updated manuscript/appendix sources and validation report.
 
-## Representative questions and checked answers
+## Representative Questions and Checked Answers
 
 ### 1. What is the paper and what is ground truth?
 
@@ -22,18 +21,27 @@ Topological Flat Bands* by Chao-Xing Liu. `paper/manuscript.tex`,
 `paper/appendix.tex`, staged code/data, and shipped figures are primary ground
 truth; supplementary reproduction reports and audits are secondary context.
 
-### 2. What scientific distinction should a reader retain?
+### 2. What changed in v1.1.0?
+
+The current manuscript and appendix were synchronized into the APP staging
+tree. The main text now includes the stable APP repository URL. Appendix C.3
+clarifies the fixed-\(\mu\) versus fixed-density interpretation of the
+anomalous effective mass and uses \(|\rho_{\mathcal S}|\) in the local
+fixed-density counting argument.
+
+### 3. What scientific distinction should a reader retain?
 
 Landau-level counting fixes the oscillation frequency and period, whereas the
 local Fermi-level LL spacing controls the LK thermal-damping scale and apparent
 effective mass. In the anomalous weak-field regime, the spacing is tied to the
-quantum metric and gives `m_eff ~ 1/(B tr g)`.
+quantum metric and gives `m_eff ~ 1/(B tr g)` along the fixed-density
+trajectory.
 
-### 3. What does the primary staged D.5 numerical evidence show?
+### 4. What does the primary staged D.5 numerical evidence show?
 
 Direct inspection of
 `figures/appendix_numerics_fresh/appD5_lambda1_effective_mass_summary.csv`
-gave:
+gives:
 
 | Window | Normal, `rho=+0.01` | Anomalous, `rho=-0.15` | Ratio |
 |---|---:|---:|---:|
@@ -41,29 +49,26 @@ gave:
 | W1 | 0.7876785131 | 6.7330704219 | 8.547993 |
 | W2 | 0.9575885300 | 10.9677073794 | 11.453466 |
 
-The corrected PowerShell quick check in
-`code/figure-reproduction/README.md` executed successfully and reported these
-six values and three ratios.
+The quick APP reproduction wrapper executed successfully and reported the
+three plotted anomalous \(\rho=-0.15\) rows.
 
-### 4. How does a reader reproduce the figures, and what is limited?
+### 5. How are the equations checked?
 
-The pinned Windows runner and setup are in `environment/README.md`. The grouped
-main-figure command and exact outputs, plus the Appendix B/D commands, are in
-`code/figure-reproduction/README.md`. The two appendix tables are correctly
-marked `manual-only` because their CSV-generated values are manually typeset.
-The full Appendix D chain is materially heavier and can be path-sensitive in a
-deeply synchronized Windows checkout; a short local checkout is recommended.
+The retained deeper Wolfram audit reports 26/26 checks passed. The new
+Appendix C.3 effective-mass audit reports 17/17 checks passed, including the
+\(|\rho_{\mathcal S}|\) counting convention, the fixed-density
+\(\mu_\rho(B)-E_0\propto B\) scaling, and the contrast with the fixed-\(\mu\)
+linear-in-\(B\) mass.
 
-### 5. What truly remains before public release?
+### 6. What remains before public release?
 
-The repository URL, `v1.0.0` tag, approved license, public empty repository,
-and connector access are resolved. The remaining gate is author approval of
-this frozen staged state and release notes, followed by publication and
-verification of the commit, immutable tag, GitHub Release, and
-`APP_PUBLICATION.json` manifest.
+The remaining gate is author approval of this `v1.1.0` staged state and release
+notes, followed by publication and verification of the commit, immutable
+`v1.1.0` tag, GitHub Release, and `APP_PUBLICATION.json` manifest.
 
-## Privacy and path check
+## Privacy and Path Check
 
-The session found no credentials, tokens, email addresses, private URLs, or
-absolute user-directory paths. All cited reader paths resolve inside the
-staging tree.
+A full release-file privacy scan was not rerun in this local pass. The
+release-package sources should continue to avoid absolute user-directory paths;
+generated logs from local builds are not part of the intended publication
+source set.
